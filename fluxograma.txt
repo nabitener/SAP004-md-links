@@ -1,0 +1,10 @@
+História de usuário 1 - Retornar os links após passar um arquivo;
+
+- Função que recebe o arquivo com extensão .md;
+- Ler o arquivo - biblioteca de leitura de arquivo (Fs);
+- Percorrer e achar os links (biblioteca para o match de links);
+- Retornar os links em um array de objeto que tem href, text, file (promisse);
+
+
+Preciso testar antes de passar pelo fs para saber se é um arquivo ou um diretório;
+Preciso de um arquivo .md para servir de base para os testes;

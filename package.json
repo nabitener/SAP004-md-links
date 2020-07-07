@@ -1,4 +1,29 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "Biblioteca para leitura de links de arquivos Markdown",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "eslint": "eslint --ext .js test/",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabitener/SAP004-md-links.git"
+  },
+  "keywords": [
+    "[leitura de links]"
+  ],
+  "author": "Nathalia Bitener",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nabitener/SAP004-md-links/issues"
+  },
+  "homepage": "https://github.com/nabitener/SAP004-md-links#readme",
+  "dependencies": {
+    "eslint": "^7.4.0"
+  }
 }
