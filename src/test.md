@@ -1,0 +1,6 @@
+* [ ] Uso de sistema de arquivos ([fs](https://nodejs.org/api/fs.html), [path](https://nodejs.org/api/path.html))
+* [ ] Instalar e usar módulos. ([npm](https://www.npmjs.com/))
+* [ ] criação de módulos [(CommonJS)](https://nodejs.org/docs/latest-v0.10.x/api/modules.html)
+* [ ] [Configuração do package.json.](https://docs.npmjs.com/files/package.json)
+* [ ] [Configuração do npm-scripts](https://docs.npmjs.com/misc/scripts)
+* [ ] Uso de CLI (Command Line Interface - Interface de Linha de Comando)
