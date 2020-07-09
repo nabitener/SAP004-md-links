@@ -2,7 +2,7 @@
   "name": "md-links",
   "version": "0.1.0",
   "description": "Biblioteca para leitura de links de arquivos Markdown",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "test": "test"
   },
@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/nabitener/SAP004-md-links#readme",
   "dependencies": {
-    "eslint": "^7.4.0"
+    "eslint": "^7.4.0",
+    "node-fetch": "^2.6.0"
+  },
+  "bin": {
+    "mdLinks": "./src/index.js"
   }
 }
