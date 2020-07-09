@@ -3,26 +3,26 @@ const readFile = require("./readFile");
 const readDiretory = require("./readDirectory");
 
 
-mdLinks = (file, validate=false) => {
-  verifyPath(file, validate=false);
+mdLinks = (file, option) => {
+  verifyPath(file, option);
 };
 
 
-verifyPath = (file, validate=false) => {
+verifyPath = (file, option) => {
   fs.stat(file, (error, stats) => {
     if (error) {
       console.log(error);
     } else if (stats.isDirectory() === true) {
-      readDiretory(file, validate=false);
+      readDiretory(file, option);
     } else {
-      readFile(file, validate=false);
+      readFile(file, option);
     }
   });
 };
 
 
 
-mdLinks("./", validate = true);
+mdLinks("./", "--validate");
 
 //validateUrl("https://pt.wikipedia.org/wiki/Markdown");
 
