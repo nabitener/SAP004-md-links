@@ -15,7 +15,7 @@
     "url": "git+https://github.com/nabitener/SAP004-md-links.git"
   },
   "keywords": [
-    "[leitura de links]"
+    "[Biblioteca] [Links]"
   ],
   "author": "Nathalia Bitener",
   "license": "ISC",
@@ -28,6 +28,6 @@
     "node-fetch": "^2.6.0"
   },
   "bin": {
-    "mdLinks": "./src/index.js"
+    "md-Links": "./cli.js"
   }
 }
