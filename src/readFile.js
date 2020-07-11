@@ -1,10 +1,9 @@
 const path = require("path");
 const fs = require("fs");
 const fetch = require("node-fetch");
-//const validateUrl = require("./validateUrl");
 const textLink = /\[(.[^\]]*)\]/;
-const hrefLink = /\(([^#]\S+)\)/;
-const regex = /\[(.[^\]]*)\]\(([^#]\S+)\)/gm;
+const hrefLink = /\((http.*)\)/;
+const regex = /\[(.[^\]]*)\]\((http.*)\)/gm;
 const arrayLinks = [];
 
 readFile = (file, option) => {
@@ -18,7 +17,7 @@ readFile = (file, option) => {
           const text = index.match(textLink)[1];
           const href = index.match(hrefLink)[1];
           arrayLinks.push({ file, href, text });
-          return (arrayLinks);
+          return arrayLinks;
         });
         if (option === "--validate") {
           Promise.all(
@@ -28,21 +27,22 @@ readFile = (file, option) => {
                   .then((response) => {
                     resolve({
                       ...link,
-                      Status: `${response.statusText} ${response.status}`,
+                      status: `${response.statusText} ${response.status}`,
                     });
                   })
                   .catch(() => {
                     resolve({
                       ...link,
-                      performance: 404,
+                      status: 404,
                     });
                   });
               });
             })
           ).then((data) => {
-            resolve(console.log(data));
+            resolve(data);
           });
-        }
+        }else {
+          resolve(arrayLinks);}
       }
     });
   });
