@@ -1,6 +1,6 @@
 const path = require("path");
-const fs = require('fs');
-const readFile = require('./readFile');
+const fs = require("fs");
+const readFile = require("./readFile");
 
 readDiretory = (file, option) => {
   return new Promise((resolve, reject) => {
@@ -17,5 +17,4 @@ readDiretory = (file, option) => {
     });
   });
 };
-
 module.exports = readDiretory;
