@@ -1,5 +1,5 @@
 {
-  "name": "md-links",
+  "name": "md-links-sap004",
   "version": "0.1.0",
   "description": "Biblioteca para leitura de links de arquivos Markdown",
   "main": "src/index.js",
@@ -23,7 +23,7 @@
     "url": "https://github.com/nabitener/SAP004-md-links/issues"
   },
   "homepage": "https://github.com/nabitener/SAP004-md-links#readme",
-  "devDependencies": {
+  "Dependencies": {
     "eslint": "^7.4.0",
     "node-fetch": "^2.6.0"
   },
