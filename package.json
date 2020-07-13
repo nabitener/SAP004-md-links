@@ -1,6 +1,6 @@
 {
   "name": "md-links-sap004",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Biblioteca para leitura de links de arquivos Markdown",
   "main": "src/index.js",
   "directories": {
