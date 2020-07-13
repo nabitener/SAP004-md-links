@@ -33,7 +33,7 @@ readFile = (file, option) => {
                   .catch(() => {
                     resolve({
                       ...link,
-                      status: 404,
+                      status: "Fail 404",
                     });
                   });
               });

@@ -23,7 +23,7 @@
     "url": "https://github.com/nabitener/SAP004-md-links/issues"
   },
   "homepage": "https://github.com/nabitener/SAP004-md-links#readme",
-  "dependencies": {
+  "devDependencies": {
     "eslint": "^7.4.0",
     "node-fetch": "^2.6.0"
   },
